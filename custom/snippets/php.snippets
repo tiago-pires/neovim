@@ -1,0 +1,63 @@
+
+snippet prin "test php var" b
+echo '<pre>' . print_r($data, true) . '</pre>'; exit()
+endsnippet
+
+## custom svg icon
+snippet menu_icon? "use custom svg icon"
+'menu_icon' => 'data:image/svg+xml;base64,' . base64_encode('${1:<svg>...</svg>}'),
+endsnippet
+
+## Plugin comment registration
+snippet plugin "Add wordpress plugin comment" b
+/*
+Plugin Name: 	${1}	
+Description: 	${2}
+Author: 			${3}
+*/
+endsnippet
+
+
+snippet cpt "custom post type" b
+add_action('init', 'register_${1}_post_type');
+
+function register_${1}_post_type() {
+ 
+	$labels = array(
+		'name' => _x('${2}', 'post type general name'),
+		'singular_name' => _x('${2}s', 'post type singular name'),
+		'add_new' => _x('Add New', '${2}s'),
+		'add_new_item' => __('Novo ${2}'),
+		'edit_item' => __('Editar ${2}'),
+		'new_item' => __('New ${2}'),
+		'view_item' => __('View ${2}'),
+		'search_items' => __('Search ${2}'),
+		'not_found' =>  __('Nothing found'),
+		'not_found_in_trash' => __('Nothing found in Trash'),
+		'parent_item_colon' => ''
+	);
+ 
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'query_var' => true,
+		'show_in_rest' => true,
+		'rewrite' => array(
+            'slug' => '${3}',
+            'with_front' => false
+            ),
+		'has_archive' => '${3}',
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'menu_position' => 10,
+		'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'revisions'),
+      'menu_icon' => 'data:image/svg+xml;base64,' . base64_encode('<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"></path><path fill-rule="evenodd" d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>'),
+	  ); 
+ 
+	register_post_type( '${4}' , $args );
+	
+}
+endsnippet
+
