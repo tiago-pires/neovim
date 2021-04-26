@@ -4,6 +4,7 @@ let mapleader="\<Space>"
 "noremap <leader>. :vsp %:h <bar> vertical resize 30<CR>
 
 noremap <leader>w <c-w>\|
+noremap <leader>l :vert resize 80<cr> 
 noremap <leader>m <c-w>=
  
 " select line content

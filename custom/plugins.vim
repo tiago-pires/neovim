@@ -1,6 +1,8 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'ayu-theme/ayu-vim'
 Plug 'https://github.com/vim-scripts/UltiSnips'
+Plug 'https://github.com/Chiel92/vim-autoformat'
+Plug 'https://github.com/stephpy/vim-php-cs-fixer'
 Plug 'https://github.com/tpope/vim-vinegar'
 Plug 'https://github.com/pseewald/vim-anyfold'
 Plug 'https://github.com/gcmt/taboo.vim' " Rename tabs

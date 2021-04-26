@@ -16,7 +16,7 @@ set nohlsearch        " Remove highlite after search entered
 set noswapfile        " Stop creating swap files (.swap store changes made to the buffer)
 set noshowmatch
 set noerrorbells
-set tabstop=3 softtabstop=0 expandtab shiftwidth=3 smarttab
+set tabstop=3 softtabstop=0 shiftwidth=3 smarttab expandtab
 set undodir=~/.config/nvim/undodir
 set spellsuggest+=10  " show only 10 spell suggestions
 set undofile
