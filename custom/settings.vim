@@ -8,6 +8,7 @@ set mouse=a           " Turn on mouse interaction
 set clipboard=unnamed " Sync clipboard with unnamed register
 set inccommand=split  " Incremental substitution
 set smartindent       " Follow indentation on returns
+set autoindent
 set ignorecase        " Ignore case when searching
 set smartcase         " But search case sensitive if uppercase is present
 set nowrap            " Start with no linewrapping
