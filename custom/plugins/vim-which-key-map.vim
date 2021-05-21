@@ -2,40 +2,35 @@
 let g:which_key_map =  {}
 
 "Single mappings
-let g:which_key_map['.'] = [ ':vsp %:h | vertical resize 30',            'siblings']
-let g:which_key_map['p'] = [ ':Lexplore | vertical resize 30',               'command history']
+let g:which_key_map['-'] = [ ':vsp %:h | vertical resize 30',            'siblings']
 
 " let g:which_key_map['.'] = [ ':Fern . -drawer -toggle',                     'explore']
 " let g:which_key_map['e'] = [ ':Fern %:h -drawer -toggle',                     'explore']
 let g:which_key_map['/'] = [ ':Commentary',                                  'comment' ]
-let g:which_key_map['c'] = [ 'q:',                                           'command history']
-let g:which_key_map['o'] = [ ':GFiles --cached --others --exclude-standard', 'project files']
+"let g:which_key_map['o'] = [ ':GFiles --cached --others --exclude-standard', 'project files']
+"
 let g:which_key_map['u'] = [ ':UndotreeToggle',                              'undo tree']
-let g:which_key_map['y'] = [ ':upd | :so %',                                 'source']
 "let g:which_key_map['w'] = [ ':MatchupWhereAmI??',                           'Indent location']
-let g:which_key_map['!'] = [ ':bd!',                                         'bd!']
 let g:which_key_map['i'] = [ ':BLines',                                      'buffers lines']
 "let g:which_key_map['e'] = [ ':CocCommand explorer',                         'explore']
 
 "t for 'go to' find...
 let g:which_key_map['e'] = {
       \ 'name' : '+files',
-      \ 'r' : [':Fern . -drawer -reveal=% -width=35  -toggle',           'Fern PWD'],
-      \ 'a' : [':Files',                                                 'all'],
       \ 'b' : [':Buffers',                                               'buffers'],
       \ 'c' : [':Commands',                                              'commands'],
-      \ '.' : [':Fern %:h -drawer -toggle',                              'File Siblings'],
+      \ 'g' : [':GFiles --cached --others --exclude-standard',           'all git files'],
       \ 'h' : [':History',                                               'history'],
       \ 'i' : [':BLines',                                                'lines-in-buffers'],
-      \ 'k' : [':e ~/.config/nvim/custom/plugins/vim-which-key-map.vim', 'keys'],
       \ 'l' : [':Lines',                                                 'lines'],
-      \ 'm' : [':Marks',                  'mappings'],
+      \ 'm' : [':Marks',                                                 'mappings'],
       \ 'n' : [':Files ~/Dropbox/Notes',                                 'notes'],
-      \ 'o' : [':Color',                                                 'colorschemes'],
-      \ 'p' : [':Fern . -drawer -width=35 -toggle',                      'Project'],
-      \ 'g' : [':Rg',                                                    'rip-grep'],
+      \ 'k' : [':Color',                                                 'colorschemes'],
+      \ 'r' : [':Rg',                                                    'rip-grep'],
       \ 's' : [':Sessions',                                              'save'],
+      \ 't' : [':Lexplore | vertical resize 30',                              'file tree'],
       \ 'v' : [':Files ~/.config/nvim/custom/',                          'nvim configs'],
+      \ 'x' : [':call CleanNoNameEmptyBuffers()',                          'delete unnamed'],
       \ }
 
 " for 'do',  

@@ -1,0 +1,31 @@
+snippet alpinejs "Get alpinejs" b
+	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+endsnippet
+
+snippet tailwindcss "Get tailwind" b
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+endsnippet
+
+snippet googlemap "Google Map Starting Point" b
+
+<!-- Load google maps with an API key and a callback your function -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=APYKEY&callback=initMap" ></script>
+
+<!-- The html element to load the map. Must have height  -->
+<div id="map" style="height: 700px; width: 100%"></div>
+
+<script>
+   // function to instantiate your map 
+   function initMap() {
+      let map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 4,
+         center: { lat: -25.344, lng: 131.036 },
+      })
+      // optionally, add a marker
+      let marker = new google.maps.Marker({
+         position: { lat: -25.344, lng: 131.036 },
+         map: map,
+      })
+   }
+</script>
+endsnippet

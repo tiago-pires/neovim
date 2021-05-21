@@ -1,12 +1,20 @@
 
 let mapleader="\<Space>"
 
-"noremap <leader>. :vsp %:h <bar> vertical resize 30<CR>
+noremap <leader>gh :diffget //3<cr>
+noremap <leader>gu :diffget //2<cr>
+noremap <leader>gs :G<cr>
+noremap <leader>gc :GCheckout<cr>
 
+"noremap <leader>. :vsp %:h <bar> vertical resize 30<CR>
+"
 noremap <leader>w <c-w>\|
-noremap <leader>l :vert resize 80<cr> 
+noremap <leader>l :vert resize <cr> 
 noremap <leader>m <c-w>=
  
+"search for the next occurrence of the selected text. Then press n to search for the next occurrence.
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
 " select line content
 "leader key with both hands, cannot escap <leader> events
 "noremap <esc> <leader> 

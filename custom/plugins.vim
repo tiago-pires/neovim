@@ -1,49 +1,65 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
-Plug 'ayu-theme/ayu-vim'
-Plug 'https://github.com/vim-scripts/UltiSnips'
-Plug 'https://github.com/Chiel92/vim-autoformat'
-Plug 'https://github.com/stephpy/vim-php-cs-fixer'
+
+"netrw
 Plug 'https://github.com/tpope/vim-vinegar'
-Plug 'https://github.com/pseewald/vim-anyfold'
-Plug 'https://github.com/gcmt/taboo.vim' " Rename tabs
 "Plug 'blueyed/vim-diminactive/'
-Plug 'vim-airline/vim-airline' 	"info bar
-Plug 'vim-airline/vim-airline-themes'
-"Plug 'Lokaltog/vim-monotone'
-" Plug 'dbmrq/vim-chalk' "folding code
-Plug 'dominickng/fzf-session.vim'
-Plug 'brooth/far.vim'
-Plug 'justinmk/vim-sneak'
-Plug 'arcticicestudio/nord-vim'
-Plug 'fxn/vim-monochrome'
-Plug 'aditya-azad/candle-grey'
-Plug 'lambdalisue/fern.vim'
-" Plug 'lambdalisue/fern-git-status.vim'
-Plug 'voldikss/vim-floaterm'
-Plug 'liuchengxu/vim-which-key'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/vim-jsx-improve'
-Plug 'mhinz/vim-startify'
-Plug 'honza/vim-snippets'
-Plug 'tpope/vim-fugitive'
+
+"folding code
+Plug 'dbmrq/vim-chalk' 
+Plug 'https://github.com/pseewald/vim-anyfold'
+
+"format
+Plug 'https://github.com/sheerun/vim-polyglot' "syntax colors and folding
+Plug 'https://github.com/AndrewRadev/tagalong.vim' "sync tag pair when changing
+Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
-Plug 'mhinz/vim-signify' " show git gutter signs
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 Plug 'andymass/vim-matchup'
+Plug 'mattn/emmet-vim'
+
+"sessions
+Plug 'dominickng/fzf-session.vim'
+Plug 'mhinz/vim-startify'
+
+"colors
+Plug 'arcticicestudio/nord-vim'
+Plug 'fxn/vim-monochrome'
+Plug 'Lokaltog/vim-monotone'
+Plug 'https://github.com/morhetz/gruvbox'
+Plug 'vim-airline/vim-airline' 	"info bar
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ayu-theme/ayu-vim'
+
+"mappings
+Plug 'liuchengxu/vim-which-key'
+
+"files
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'https://github.com/stsewd/fzf-checkout.vim'
+
+"autocomplete
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/vim-jsx-improve'
+
+"snips
+Plug 'https://github.com/vim-scripts/UltiSnips'
+Plug 'honza/vim-snippets'
+
+"git
+Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify' " show git gutter signs
+
+"code runners
 Plug 'metakirby5/codi.vim'
 Plug '0x84/vim-coderunner'
 Plug 'https://github.com/xianzhon/vim-code-runner'
-Plug 'tpope/vim-surround'
 Plug 'dbridges/vim-markdown-runner'
+
+"misc
 Plug 'mbbill/undotree'
-Plug 'mattn/emmet-vim'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'} " mustple cursor
 Plug 'plasticboy/vim-markdown'
-"Plug 'goldfeld/vim-seek'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
 Plug 'dbeniamine/cheat.sh-vim'
+
 call plug#end()
