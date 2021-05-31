@@ -1,16 +1,27 @@
 
 let mapleader="\<Space>"
 
+" tab navigation
+noremap H gT
+noremap L gt
+
+tnoremap <c-n> <c-\><c-n>
+
+"run selected code block as
+vnoremap <leader>p yy:!php -r '<c-r>"'<cr>
+
+"coc
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gD <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
 noremap <leader>gh :diffget //3<cr>
 noremap <leader>gu :diffget //2<cr>
 noremap <leader>gs :G<cr>
 noremap <leader>gc :GCheckout<cr>
 
 "noremap <leader>. :vsp %:h <bar> vertical resize 30<CR>
-"
-noremap <leader>w <c-w>\|
-noremap <leader>l :vert resize <cr> 
-noremap <leader>m <c-w>=
+noremap <leader>y <c-^>
  
 "search for the next occurrence of the selected text. Then press n to search for the next occurrence.
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
@@ -18,7 +29,7 @@ vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 " select line content
 "leader key with both hands, cannot escap <leader> events
 "noremap <esc> <leader> 
-tmap <c-s> <c-\><c-n>
+"tmap <c-n> <c-\><c-n>
 
 " Usingt vim matchup to navigate html tags
 noremap <leader>k [%[%
@@ -31,28 +42,10 @@ noremap <leader>q :q<cr>
 "fix spelling behind, just use first option (feeling lucky)
 "noremap <leader>z mz[s2z=`z 
 
-" quick terminal
-noremap <c-q> :FloatermToggle  -height=0.9 --width=0.9 --name=q<cr>
-tmap <c-q> <c-\><c-n>:FloatermHide!<cr>
-
-
 noremap <c-j> <c-d>zz
 noremap <c-k> <c-u>zz
 
-noremap ga <Plug>(EasyAlign)
-xmap ga <Plug>(EasyAlign)
-
-
-" noremap <c-t> :FloatermToggle  -height=0.9 --width=0.9 --name=s<cr>
-" noremap <c-j> :FloatermNew --wintype=normal --position=bottom --height=0.5 --name=j<cr>
-" noremap <c-k> :FloatermToggle --wintype=normal --position=bottom --height=0.5 --name=j<cr>
-" 
-" tmap <c-t> <c-\><c-n>:FloatermHide!<cr>
-" tmap <c-s> <c-\><c-n>:FloatermHide!<cr>
-
-
 noremap <tab> <c-w>
-
 
 tnoremap <C-w>h <C-\><C-n><C-w>h
 tnoremap <C-w>j <C-\><C-n><C-w>j
@@ -81,7 +74,7 @@ tnoremap <C-w>p <C-\><C-n><c-^>
 " 
 " tmap ,d <c-\><c-n>:bd!<cr>
 " 
-" " quick temp shell
+ " quick temp shell
 "tmap  <leader><esc> <c-\><c-n>
 
 
@@ -114,6 +107,6 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Move Visual blocks with J an K
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
+"vnoremap J :m '>+1<CR>gv=gv
+"vnoremap K :m '<-2<CR>gv=gv
 

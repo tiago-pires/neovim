@@ -22,6 +22,7 @@ Plug 'mattn/emmet-vim'
 Plug 'dominickng/fzf-session.vim'
 Plug 'mhinz/vim-startify'
 
+
 "colors
 Plug 'arcticicestudio/nord-vim'
 Plug 'fxn/vim-monochrome'
@@ -38,6 +39,7 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'https://github.com/stsewd/fzf-checkout.vim'
+Plug 'https://github.com/gcmt/taboo.vim'
 
 "autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
