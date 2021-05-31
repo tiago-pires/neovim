@@ -7,6 +7,7 @@ set hidden            " Swich buffers without saving
 set mouse=a           " Turn on mouse interaction
 set clipboard=unnamed " Sync clipboard with unnamed register
 set inccommand=split  " Incremental substitution
+set tabstop=3 softtabstop=0 shiftwidth=3 smarttab expandtab
 set smartindent       " Follow indentation on returns
 set autoindent
 set ignorecase        " Ignore case when searching
@@ -17,7 +18,6 @@ set nohlsearch        " Remove highlite after search entered
 set noswapfile        " Stop creating swap files (.swap store changes made to the buffer)
 set noshowmatch
 set noerrorbells
-set tabstop=3 softtabstop=0 shiftwidth=3 smarttab expandtab
 set undodir=~/.config/nvim/undodir
 set spellsuggest+=10  " show only 10 spell suggestions
 set undofile

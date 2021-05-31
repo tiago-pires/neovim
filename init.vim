@@ -1,8 +1,8 @@
 source $HOME/.config/nvim/custom/plugins.vim
 source $HOME/.config/nvim/custom/plugins/vim-which-key.vim
 source $HOME/.config/nvim/custom/settings.vim
-source $HOME/.config/nvim/custom/plugins/coc.vim
-source $HOME/.config/nvim/custom/plugins/coc-snippets.vim
+"source $HOME/.config/nvim/custom/plugins/coc-snippets.vim
+"source $HOME/.config/nvim/custom/plugins/coc.vim
 source $HOME/.config/nvim/custom/plugins/fzf.vim
 source $HOME/.config/nvim/custom/plugins/vim-markdown.vim
 source $HOME/.config/nvim/custom/plugins/ranger.vim
