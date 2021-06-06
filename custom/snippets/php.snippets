@@ -61,3 +61,16 @@ function register_${1}_post_type() {
 }
 endsnippet
 
+snippet get_posts "wp get posts" b
+$posts_array = get_posts( $args );
+if ( $posts_array ) { // Make sure we have posts before we attempt to loop through them
+    foreach ( $posts_array as $post ) {
+        setup_postdata( $post );
+
+        // Now we can use template tags
+        the_title();
+        the_content();
+    }
+    wp_reset_postdata(); // VERY VERY IMPORTANT
+}
+endsnippet

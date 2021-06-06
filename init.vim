@@ -13,6 +13,7 @@ source $HOME/.config/nvim/custom/plugins/floatterm.vim
 source $HOME/.config/nvim/custom/plugins/vim-sneak.vim
 source $HOME/.config/nvim/custom/plugins/netrw.vim
 source $HOME/.config/nvim/custom/plugins/fzf-sessions.vim
+source $HOME/.config/nvim/custom/plugins/vim-mundo.vim
 source $HOME/.config/nvim/custom/scripts.vim
 source $HOME/.config/nvim/custom/mappings.vim
 

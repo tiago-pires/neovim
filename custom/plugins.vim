@@ -1,5 +1,8 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+"shame
+Plug 'https://github.com/dbeniamine/cheat.sh-vim'
+
 "netrw
 Plug 'https://github.com/tpope/vim-vinegar'
 "Plug 'blueyed/vim-diminactive/'
@@ -17,6 +20,7 @@ Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 Plug 'andymass/vim-matchup'
 Plug 'mattn/emmet-vim'
+Plug 'https://github.com/prettier/vim-prettier'
 
 "sessions
 Plug 'dominickng/fzf-session.vim'
@@ -61,6 +65,7 @@ Plug 'dbridges/vim-markdown-runner'
 
 "misc
 Plug 'mbbill/undotree'
+Plug 'https://github.com/simnalamburt/vim-mundo'
 Plug 'plasticboy/vim-markdown'
 Plug 'dbeniamine/cheat.sh-vim'
 

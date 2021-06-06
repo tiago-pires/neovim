@@ -3,7 +3,7 @@ let g:netrw_liststyle=3
 "netrw hide help banner
 let g:netrw_banner = 0
 " Delete directories which are not empty https://til.hashrocket.com/posts/19f784a79d-deleting-directories-of-files-from-netrw
-let g:netrw_localrmdir='rm -r'
+let g:netrw_localrmdir='rm -fr'
 
 " <cr> will open file in prev buffer
 "let g:netrw_browse_split=0

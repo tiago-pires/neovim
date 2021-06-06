@@ -9,3 +9,5 @@ let g:fzf_color = "bw"
 
 "source config files
 autocmd BufWritePost % so %
+
+

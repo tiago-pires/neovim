@@ -5,7 +5,13 @@ let mapleader="\<Space>"
 noremap H gT
 noremap L gt
 
-tnoremap <c-n> <c-\><c-n>
+tnoremap <c-s> <c-\><c-n>
+tnoremap <LEFT> <c-\><c-n><c-w>h
+tnoremap <RIGHT> <c-\><c-n><c-w>l
+tnoremap <c-q> <c-\><c-n>:bd!<cr>
+
+noremap <c-q> :bd!<cr>
+
 
 "run selected code block as
 vnoremap <leader>p yy:!php -r '<c-r>"'<cr>
