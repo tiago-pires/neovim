@@ -26,8 +26,8 @@ let g:which_key_map['e'] = {
       \ 'l' : [':Lines',                                                 'lines'],
       \ 'm' : [':Marks',                                                 'mappings'],
       \ 'n' : [':Files ~/Dropbox/Notes',                                 'notes'],
+      \ 'r' : [':Files ~/Dropbox/Sites/s7study2/wp-content/themes/',     'original'],
       \ 'k' : [':Color',                                                 'colorschemes'],
-      \ 'r' : [':Rg',                                                    'rip-grep'],
       \ 's' : [':Sessions',                                              'save'],
       \ 't' : [':Lexplore | vertical resize 30',                              'file tree'],
       \ 'v' : [':Files ~/.config/nvim/custom/',                          'nvim configs'],
@@ -35,17 +35,17 @@ let g:which_key_map['e'] = {
       \ }
 
 
-"a"for 'anki',  
+"a"for 'anki',
 let g:which_key_map['a'] = {
       \ 'name' : '+Do',
-      \ 'a' : ['0jmxkdd}P`x', 'excelent'],
-      \ 'b' : ['0jmxkdd}20kP`x', 'excelent'],
-      \ 'c' : ['0jmxkdd20kP`x', 'excelent'],
-      \ 'd' : ['0jmxkdd10kP`x', 'excelent'],
-      \ 'm' : ['0jmxkdd/\# Maintenance\<cr>\<esc>zzjP`x', 'maintenance'],
+      \ 'h' : [':set ft=html', 'as html'],
+      \ 'p' : [':set ft=php', 'as php'],
+      \ 'c' : [':set ft=css', 'as css'],
+      \ 'x' : [':set ft=xml', 'as xml'],
+      \ 'j' : [':set ft=javascript', 'as javascript'],
       \ }
 
-"i"for 'insert/edit stay in normal',  
+"i"for 'insert/edit stay in normal',
 let g:which_key_map['i'] = {
       \ 'name' : '+Do',
       \ '.' : ['mxA.<esc>`x', 'add period'],
@@ -63,7 +63,7 @@ let g:which_key_map['i'] = {
 let g:which_key_map['.'] = {
       \ 'name' : '+vim',
       \ }
- 
+
 
 "p for 'program'
 let g:which_key_map['p'] = {
@@ -76,6 +76,3 @@ let g:which_key_map['p'] = {
       \ 'm' : [':%! pandoc -f html -t commonmark | pbcopy <cr><esc>"+p', 'html to md'],
       \ 'p' : [':up | :so % | :PlugInstall',                                 'install'],
       \ }
-
-
-

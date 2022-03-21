@@ -1,26 +1,35 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+" Search and Replace
+Plug 'markonm/traces.vim'
+
 "shame
 Plug 'https://github.com/dbeniamine/cheat.sh-vim'
+Plug 'https://github.com/oprogramador/vim-ftp'
+Plug 'tobyS/pdv' "depends on vmustache
+Plug 'https://github.com/tobyS/vmustache'
 
 "netrw
-Plug 'https://github.com/tpope/vim-vinegar'
+"Plug 'https://github.com/tpope/vim-vinegar'
 "Plug 'blueyed/vim-diminactive/'
 
 "folding code
-Plug 'dbmrq/vim-chalk' 
+Plug 'dbmrq/vim-chalk'
 Plug 'https://github.com/pseewald/vim-anyfold'
 
 "format
 Plug 'https://github.com/sheerun/vim-polyglot' "syntax colors and folding
 Plug 'https://github.com/AndrewRadev/tagalong.vim' "sync tag pair when changing
 Plug 'tpope/vim-surround'
+Plug 'https://github.com/AndrewRadev/dsf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 Plug 'andymass/vim-matchup'
 Plug 'mattn/emmet-vim'
 Plug 'https://github.com/prettier/vim-prettier'
+Plug 'w0rp/ale'
+Plug 'https://github.com/stephpy/vim-php-cs-fixer' "php
 
 "sessions
 Plug 'dominickng/fzf-session.vim'

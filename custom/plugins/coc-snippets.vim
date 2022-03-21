@@ -1,3 +1,7 @@
+
+"stop dispute with coc for tabs
+let g:UltiSnipsExpandTrigger = "<nop>"
+
 " Use <C-l> for trigger snippet expand.
 imap <C-l> <Plug>(coc-snippets-expand)
 

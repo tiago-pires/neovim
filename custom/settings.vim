@@ -1,5 +1,6 @@
 colorscheme nord
-syntax on 
+set noundofile
+syntax on
 set number            " Turn on line numbers
 set termguicolors     " enable true colors support
 set relativenumber    " Turn on relative numbers
@@ -30,7 +31,7 @@ set nofoldenable      " open files with no folds
 autocmd BufRead,BufNewFile *.md,*.txt setlocal wrap linebreak
 
 "set hidden chars symbols
-set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶ 
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶
 
 " stop delay when changing to normal mode. See https://tinyurl.com/yxg949es
 set timeoutlen=1000
@@ -43,4 +44,3 @@ autocmd! FileType fzf tnoremap <buffer> <esc> <c-c>
 
 " set filetypes as typescriptreact
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
-
