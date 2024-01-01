@@ -6,6 +6,10 @@ vim.cmd([[
   set shiftwidth=2
 ]])
 
+
+-- Set leader
+vim.g.mapleader = ' '
+
 -- 1 Lazy install check
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
